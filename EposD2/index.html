@@ -7,28 +7,51 @@
     <title>InnerSloth</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 </head>
 <body>
     <div class="split left fill">
+        <div class="logo" >
+            <img src="img/Among-Us-Logo.png" alt="logo">
+        </div>      
     </div>
-    <div class="split right">
-        <div class="header">
+    <div class="split split_right">
+        <div class="header-section">
             <h1>Sign up</h1>
         </div>
-        <div class="middle">
-            <div class="accName">
-                <label for="acc_name">Name</label>
-                <input type="text" name="acc_name" id="acc_name">
-            </div>
-            <div class="email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="pass">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </div>
+        <div class="form-section">
+            <form id="loginForm">
+                <div class="input-icons">
+                    <i class="fa fa-user icon required"></i>
+                    <input class="input-field" type="text">
+                    <i class="fa fa-envelope icon required"></i>
+                    <input class="input-field" type="email">
+                    <i class="fa fa-phone icon"></i>
+                    <input class="input-field" type="text">
+                    <i class="fa fa-lock icon required"></i>
+                    <input class="input-field" type="password">
+                </div>
+                <div class="newsletter">
+                    <form>
+                        <input type="checkbox" name="guidelines" id="guidelines">
+                        <label for="guidelines">I have read and agree to <a href="https://tamuceasttexan.com/4534/opinion/no-doubt-water-isnt-wet/" target="_blank">privacy policy</a> and <a href="https://www.jesuisundev.com/en/why-developers-hate-php/" target="_blank">terms of service</a></label>
+                        <br>
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">Subscribe to our newsletter</label>
+                    </form>
+                </div>
+          </form>
+          <div class="button-section">
+            <button class="join-button" type="submit" form="loginForm" value="Submit">Sign Up</button>
+          </div>        
         </div>
+        <div class="agreement" style="margin-top: -50px;">
+            Already have an accoun? Login <a href="https://www.youtube.com/watch?v=4Jui6Prje6o" target="_blank">here!</a>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2023 all rights reserved</p>
+        </footer>
     </div>
 </body>
 </html>

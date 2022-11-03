@@ -12,12 +12,6 @@
     left: 0;
     background-color: #111;
   }
-  
-  /* Control the right side */
-.right {
-    right: 0;
-    background-color: red;
-}
 
 
 .fill {
@@ -25,10 +19,114 @@
   background-size: cover;
   background-position: center;
   background-image: url('../img/forma-gif.gif');
+  text-align: center;
+}
+
+.logo{
+  margin-top: -25px;
 }
 
 /*                              RIGHT SIDE                               */
 
-.header{
+.split_right{
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.header-section{
   text-align: center;
+}
+
+/*    INPUT  */
+.required::after{
+  content: " *";
+  font-weight: bold;
+  color: red;
+}
+
+.form-section{
+  max-width:550px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+/* END INPUT */
+
+
+.button-section{
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+
+
+
+/* BUTTON EFFECT  */
+.join-button{
+  background-color: white;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(41, 118, 211);
+  height: 36px;
+  width: 100px;
+  border-radius: 2px;
+  cursor: pointer;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: background-color 0.15s,color 0.15s;
+}
+
+.join-button:hover{
+  background-color: rgb(41, 118, 211);
+  color: white;
+}
+
+.join-button:active{
+  opacity: 0.7;
+}
+
+
+
+
+/* LINK EFFECT  */
+a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+
+footer{
+  margin-bottom: -50px;
 }
