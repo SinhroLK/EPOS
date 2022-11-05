@@ -2,7 +2,7 @@ function prikaziAboutUs(){
     var x = document.getElementById("about_us");
     var image = document.getElementById("gif1");
     
-    if(x.style.display == 'none'){
+    if(getComputedStyle(x, null).display === 'none'){
         x.style.display = "block";
         image.src = "img/gifSmrt1.gif"
     } else {
@@ -14,7 +14,7 @@ function prikaziAboutUs(){
 function prikaziMailove(){
     var x = document.getElementById("emails");
     var image = document.getElementById("gif2");
-    if(x.style.display == 'none'){
+    if(getComputedStyle(x, null).display === 'none'){
         x.style.display = "block";
         image.src = "img/gifSmrt2.gif"
     } else {
@@ -26,7 +26,7 @@ function prikaziMailove(){
 function prikaziGithub(){
     var x = document.getElementById("github");
     var image = document.getElementById("gif3");
-    if(x.style.display == 'none'){
+    if(getComputedStyle(x, null).display === 'none'){
         x.style.display = "block";
         image.src = "img/gifSmrt3.gif"
     } else {
