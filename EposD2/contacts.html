@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts and about us</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="CSS/contactsStyle.css">
 </head>
 <body>
-    
+    <div class="About_us">
+        <div class="split gifs">
+            <div class="gif1">
+                <img src="img/gifSmrt1-pocetak.png" alt="gif1" height="100px" width="100px" id="gif1">
+                <button onclick="prikaziAboutUs()">About us</button>
+            </div>
+            <div class="gif2">
+                <img src="img/gifSmrt2-pocetak.png" alt="gif2" height="100px" width="200px" id="gif2">
+                <button onclick="prikaziMailove()">Email</button>
+            </div>
+            <div class="gif3">
+                <img src="img/gifSmrt3-pocetak.png" alt="gif3" height="100px" width="200px" id="gif3">
+                <button onclick="prikaziGithub()">GitHub</button>
+            </div>
+        </div>
+        <div class="split texts">
+            <p id="about_us" class="paragraf">
+                Our names are Matea, Stefan and Luka
+            </p>
+            <p id="emails" class ="paragraf">
+                lkrstic001@gmail.com
+            </p>
+            <a href="https://github.com/SinhroLK" id="github" class ="paragraf">Luka's GitHub</a>
+        </div>
+    </div>
+    <div class = "contact_us">
+    </div>
+    <script src="JS/contacts.js"></script>
 </body>
 </html>
