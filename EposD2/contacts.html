@@ -10,47 +10,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <bodyd>
-    <div class="About_us">
-        <div class="split gifs">
-            <div class="gif1">
-                <img src="img/gifSmrt1-pocetak.png" alt="gif1" height="100px" width="100px" id="gif1">
-                <button onclick="prikaziAboutUs()">About us</button>
+    <div class="komplet">
+        <div class="About_us">
+            <div class="split gifs">
+                <div class="gif1">
+                    <img src="img/gifSmrt1-pocetak.png" alt="gif1" height="100px" width="100px" id="gif1" onclick="prikaziAboutUs()">
+                    <p class="kvazi-dugme">About us</p>
+                </div>
+                <div class="gif2">
+                    <img src="img/gifSmrt2-pocetak.png" alt="gif2" height="100px" width="200px" id="gif2" onclick="prikaziMailove()">
+                    <p class="kvazi-dugme">Email</p>
+                </div>
+                <div class="gif3">
+                    <img src="img/gifSmrt3-pocetak.png" alt="gif3" height="100px" width="200px" id="gif3" onclick="prikaziGithub()">
+                    <p class="kvazi-dugme">GitHub</p>
+                </div>
             </div>
-            <div class="gif2">
-                <img src="img/gifSmrt2-pocetak.png" alt="gif2" height="100px" width="200px" id="gif2">
-                <button onclick="prikaziMailove()">Email</button>
-            </div>
-            <div class="gif3">
-                <img src="img/gifSmrt3-pocetak.png" alt="gif3" height="100px" width="200px" id="gif3">
-                <button onclick="prikaziGithub()">GitHub</button>
+            <div class="split texts fadeIn">
+                <p id="about_us" class="paragraf" display>
+                    Our names are Matea, Stefan and Luka. We are students at the Faculty of Organisational Sciences, <br> University of Belgrade. 
+                    As of making this we are in our 3rd year. All three of us are <br> interested in ethical hacking, with Matea and Stefan having 
+                    participad in the national championship representing our faculty. <br> Stefan is also interested in computer networks, while
+                    Matea and Luka are interested in data science and machine learning. 
+                </p>
+                <p id="emails" class ="paragraf">
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:matealegenda33@gmail.com">Matea's Mail  </a> <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:muratbajazitovic@gmail.com">Stefan's Mail </a> <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:lkrstic001@gmail.com">Luka's Mail </a> <br>
+                </p>
+                <p id = "github" class ="paragraf">
+                    <a href="https://github.com/MateaLukiccc" target="_blank">
+                        <i class="fa fa-github"></i> Matea's GitHub
+                    </a> <br>
+                    <a href="https://github.com/Djuropegla" target="_blank">
+                        <i class="fa fa-github"></i> Stefan's GitHub 
+                    </a><br>
+                    <a href="https://github.com/SinhroLK" target="_blank">
+                        <i class="fa fa-github"></i> Luka's GitHub 
+                    </a>
+                </p>
             </div>
         </div>
-        <div class="split texts fadeIn">
-            <p id="about_us" class="paragraf" display>
-                Our names are Matea, Stefan and Luka. We are students at the Faculty of Organisational Sciences, <br> University of Belgrade. 
-                As of making this we are in our 3rd year. All three of us are <br> interested in ethical hacking, with Matea and Stefan having 
-                participad in the national championship representing our faculty. <br> Stefan is also interested in computer networks, while
-                Matea and Luka are interested in data science and machine learning. 
-            </p>
-            <p id="emails" class ="paragraf">
-             <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:matealegenda33@gmail.com">Matea's Mail  </a> <br>
-            <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:muratbajazitovic@gmail.com">Stefan's Mail </a> <br>
-            <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:lkrstic001@gmail.com">Luka's Mail </a> <br>
-            </p>
-            <p id = "github" class ="paragraf">
-                <a href="https://github.com/MateaLukiccc" target="_blank">
-                    <i class="fa fa-github"></i>Matea's GitHub
-                </a> <br>
-                <a href="https://github.com/Djuropegla" target="_blank">
-                    <i class="fa fa-github"></i>Stefan's GitHub 
-                </a><br>
-                <a href="https://github.com/SinhroLK" target="_blank">
-                    <i class="fa fa-github"></i>Luka's GitHub 
-                </a>
-            </p>
+        <div class = "contact_us">
+            <p>aj da vidimo</p>
         </div>
-    </div>
-    <div class = "contact_us">
     </div>
     <script src="JS/contacts.js"></script>
 </body>

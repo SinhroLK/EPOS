@@ -1,3 +1,15 @@
+.komplet{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.About_us{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+
 /* Split the screen in half */
 .split {
     height: 63%;
@@ -35,10 +47,21 @@
     align-items: center;
   }
 
-  button{
-    width: 100px;
+  .gif1:hover, .gif1:focus, .gif1:active{
+    transform: scale(1.2);
   }
-  
+
+  .gif2:hover, .gif2:focus, .gif2:active{
+    transform: scale(1.2);
+  }
+
+  .gif3:hover, .gif3:focus, .gif3:active{
+    transform: scale(1.2);
+  }
+
+  .kvazi-dugme{
+    font-size: 20px;
+  }
   /* Control the right side */
   .texts {
     width: 85%;
@@ -46,18 +69,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: black;
   }
 
-  .paragraf{
+  /* .paragraf{
     display:none;
     font-size: 24px;
+    color: white;
     animation:fadeIn 4s;
+    animation: fadeOut 4s;
   }
 
   @keyframes fadeIn{
     0% {opacity: 0};
     100% {opacity: 1};
+  }
+
+  @keyframes fadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  } */
+
+  .paragraf{
+    font-size: 24px;
+    color: white;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+  }
+
+  .paragraf.fade{
+    opacity: 0;
   }
 
   .fa-github {
@@ -75,5 +120,11 @@
   }
 
   .fa-envelope:hover {
-    transform: rotate(360deg) scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* Contact us form */
+  .contact_us{
+    display: flex;
+    align-content: flex-end;
   }
