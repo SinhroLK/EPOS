@@ -1,8 +1,11 @@
+
+
 /* NAV BAR */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 section{
   position: relative;
@@ -86,7 +89,7 @@ a{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Asap", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background: #42455a;
