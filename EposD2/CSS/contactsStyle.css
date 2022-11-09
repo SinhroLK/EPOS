@@ -1,3 +1,9 @@
+*{
+  margin-top: 0;
+  margin-right: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .komplet{
   display: flex;
   flex-direction: column;
@@ -5,16 +11,19 @@
 }
 .About_us{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 70%;
   width: 100%;
 }
 
+.tekst{
+  margin: 10px;
+}
+
 /* Split the screen in half */
 .split {
-    height: 63%;
+    height: 30vw;
     width: 15%;
-    position: fixed;
     top: 0;
     padding: 0;
   }
@@ -65,19 +74,22 @@
   /* Control the right side */
   .texts {
     width: 85%;
+    height: 30vw;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url('../img/pozadinaContacts.jpg');
+    background-size: cover;
+    
   }
 
-  /* .paragraf{
+  .paragraf{
     display:none;
     font-size: 24px;
     color: white;
     animation:fadeIn 4s;
-    animation: fadeOut 4s;
   }
 
   @keyframes fadeIn{
@@ -85,12 +97,7 @@
     100% {opacity: 1};
   }
 
-  @keyframes fadeOut{
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-  } */
-
-  .paragraf{
+  /* .paragraf{
     font-size: 24px;
     color: white;
     opacity: 1;
@@ -103,7 +110,7 @@
 
   .paragraf.fade{
     opacity: 0;
-  }
+  } */
 
   .fa-github {
     color: var(--primary-light);
@@ -121,10 +128,4 @@
 
   .fa-envelope:hover {
     transform: scale(1.2);
-  }
-
-  /* Contact us form */
-  .contact_us{
-    display: flex;
-    align-content: flex-end;
   }

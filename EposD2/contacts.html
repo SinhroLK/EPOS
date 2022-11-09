@@ -8,8 +8,11 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="CSS/contactsStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<bodyd>
+<body>
     <div class="komplet">
         <div class="About_us">
             <div class="split gifs">
@@ -27,17 +30,19 @@
                 </div>
             </div>
             <div class="split texts fadeIn">
-                <p id="about_us" class="paragraf" display>
-                    Our names are Matea, Stefan and Luka. We are students at the Faculty of Organisational Sciences, <br> University of Belgrade. 
-                    As of making this we are in our 3rd year. All three of us are <br> interested in ethical hacking, with Matea and Stefan having 
-                    participad in the national championship representing our faculty. <br> Stefan is also interested in computer networks, while
+                <p id="about_us" class="paragraf tekst" display>
+                    Our names are Matea, Stefan and Luka. We are students at the Faculty of Organisational Sciences, University of Belgrade. 
+                    As of making this we are in our 3rd year. All three of us are interested in ethical hacking, with Matea and Stefan having 
+                    participad in the national championship representing our faculty. Stefan is also interested in computer networks, while
                     Matea and Luka are interested in data science and machine learning. 
                 </p>
+                <br>
                 <p id="emails" class ="paragraf">
                 <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:matealegenda33@gmail.com">Matea's Mail  </a> <br>
                 <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:muratbajazitovic@gmail.com">Stefan's Mail </a> <br>
                 <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:lkrstic001@gmail.com">Luka's Mail </a> <br>
                 </p>
+                <br>
                 <p id = "github" class ="paragraf">
                     <a href="https://github.com/MateaLukiccc" target="_blank">
                         <i class="fa fa-github"></i> Matea's GitHub
@@ -52,7 +57,23 @@
             </div>
         </div>
         <div class = "contact_us">
-            <p>aj da vidimo</p>
+            <div class="form-section">
+                <form id="loginForm" action="main.html">
+                    <div class="input-icons">
+                        <i class="fa fa-user icon required"></i>
+                        <input class="input-field" type="text" placeholder="Name">
+                        <i class="fa fa-envelope icon required"></i>
+                        <input class="input-field" type="email" placeholder="Email">
+                        <i class="fa fa-phone icon"></i>
+                        <input class="input-field" type="text" placeholder="Phone">
+                        <i class="fa fa-lock icon required"></i>
+                        <input class="input-field" type="password" placeholder="Password">
+                    </div>
+              </form>
+              <div class="button-section">
+                <button class="join-button" type="submit" form="loginForm" value="Submit">Sign Up</button>
+              </div>        
+            </div>
         </div>
     </div>
     <script src="JS/contacts.js"></script>
