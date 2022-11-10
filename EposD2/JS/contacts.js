@@ -35,6 +35,26 @@ function prikaziGithub(){
     }
 }
 
+function faq(){
+    var faq = document.getElementsByClassName("q");
+    var i;
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+            /* Toggle between hiding and showing the active panel */
+            var body = this.nextElementSibling;
+            if (getComputedStyle(body, null) === 'block') {
+                body.style.display = "none";
+            } else {
+                body.style.display = "block";
+            }
+        });
+    }
+}
+
+
 // let mylogo1 = document.getElementById('about_us');
 // document.getElementById('gif1').onclick = function(){
 //   mylogo1.classList.toggle('fade');

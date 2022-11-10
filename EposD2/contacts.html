@@ -57,23 +57,75 @@
             </div>
         </div>
         <div class = "contact_us">
-            <div class="form-section">
-                <form id="loginForm" action="main.html">
-                    <div class="input-icons">
-                        <i class="fa fa-user icon required"></i>
-                        <input class="input-field" type="text" placeholder="Name">
-                        <i class="fa fa-envelope icon required"></i>
-                        <input class="input-field" type="email" placeholder="Email">
-                        <i class="fa fa-phone icon"></i>
-                        <input class="input-field" type="text" placeholder="Phone">
-                        <i class="fa fa-lock icon required"></i>
-                        <input class="input-field" type="password" placeholder="Password">
+            <form id="contact_us" action="contacts.html">
+                <div class="forma1 child">
+                    <label for="name">Name</label>
+                    <input id="name" class="input-field" type="text" placeholder="John Smith">
+                    <label for="email">Email</label>
+                    <input id="email" class="input-field" type="email" placeholder="johnsmith123@mail.com">
+                    <label for="zodiac">Zodiac sign</label>
+                    <select name="Zodiac sign" id="zodiac">
+                        <option value="Aries">Aries</option>
+                        <option value="Taurus">Taurus</option>
+                        <option value="Gemini">Gemini</option>
+                        <option value="Cancer">Cancer</option>
+                        <option value="Leo">Leo</option>
+                        <option value="Virgo">Virgo</option>
+                        <option value="Libra">Libra</option>
+                        <option value="Scorpius">Scorpius</option>
+                        <option value="Sagittarius">Sagittarius</option>
+                        <option value="Capricornus">Capricornus</option>
+                        <option value="Aquarius">Aquarius</option>
+                        <option value="Pisces">Pisces</option>
+                    </select>
+                
+                </div>
+                <div class="forma2 child">
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="50" rows="5" placeholder="Enter your message..."></textarea>
                     </div>
-              </form>
-              <div class="button-section">
-                <button class="join-button" type="submit" form="loginForm" value="Submit">Sign Up</button>
-              </div>        
+                    <div class="button_mails">
+                        <div class="emails_list">
+                            <label for="mails">Who do you want to contact</label>
+                            <select name="Who do you want to contact" id="mails">
+                                <option value="Matea">Matea</option>
+                                <option value="Stefan">Stefan</option>
+                                <option value="Luka">Luka</option>
+                                <option value="All three">All three</option>    
+                            </select>
+                        </div>
+                        <div class="send_button">
+                            <button>
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+                <div class="impostor-gif">
+                    <img src="img/forma_gif.gif" alt="gif" width="50%" height="50%">
+                </div>
+        </div>
+        <div class="faq">
+            <h2>FAQS</h2>
+            <div class="q1">
+                <h3 class="q">1. Do you believe in object permanency?</h3>
+                <p class="a">MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM</p>
             </div>
+            <hr class="hr-line">
+            <div class="q2">
+                <h3 class="q">2. Do you know any two odd numbers whose difference of squares is not a multiple of 8?</h3>
+            <p class="a">Don't ever ask us that again<p>
+            </div>
+            
+            <hr class="hr-line">
+            <div class="q3">
+                <h3 class="q">3.What is you guys' favourite programming language?</h3>
+                <p class="a">Matea: Not Java <br>Stefan: Not Java <br> Luka: Java</p> 
+            </div>
+           
+            <hr class="hr-line">
         </div>
     </div>
     <script src="JS/contacts.js"></script>

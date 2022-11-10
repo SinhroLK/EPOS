@@ -129,3 +129,89 @@
   .fa-envelope:hover {
     transform: scale(1.2);
   }
+/* contact us section */
+.contact_us{
+  margin-top: 3%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  /* first half of the form */
+  .forma1{
+    display:flex;
+    flex-direction: column;
+    float: left;
+    height: fit-content;
+  }
+  /* second half of the form */
+  .forma2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-left: 10vw;
+  }
+    .message{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .button_mails{
+      display: flex;
+      flex-direction: row;
+    }
+
+      .emails_list{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .send_button{
+        margin-left: 3%;
+        margin-top: 5%;
+      }
+
+.q{
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+
+.a{
+  margin: auto;
+  /* text-align: center; */
+ width: 50%; 
+ padding: auto;
+ 
+}
+
+.active, .q:hover {
+    background-color: #4b0707;
+}
+
+.a {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+.q:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
