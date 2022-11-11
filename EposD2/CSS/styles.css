@@ -159,7 +159,7 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
   a:hover {
-    box-shadow: inset 100px 0 0 0 #54b3d6;
+    box-shadow: inset 1000px 0 0 0 #54b3d6;
     color: white;
   }
   
