@@ -2,6 +2,7 @@
   margin-top: 0;
   margin-right: 0;
   font-family: 'Roboto', sans-serif;
+
 }
 
 .komplet{
@@ -30,7 +31,7 @@
   
   /* Control the left side */
   .gifs {
-    left: 0;
+    /* left: 0; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,18 +43,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width:100%
   }
 
   .gif2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width:100%
   }
   
   .gif3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width:100%
   }
 
   .gif1:hover, .gif1:focus, .gif1:active{
@@ -74,14 +78,14 @@
   /* Control the right side */
   .texts {
     width: 85%;
-    height: 30vw;
-    right: 0;
+    /* height: 30vw; */
+    /* right: 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: black; */
     background-image: url('../img/pozadinaContacts.jpg');
     background-size: cover;
+
     
   }
 
@@ -90,6 +94,9 @@
     font-size: 24px;
     color: white;
     animation:fadeIn 4s;
+  }
+  .media{
+    display:none;
   }
 
   @keyframes fadeIn{
@@ -136,29 +143,35 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 3%;
+}
+label{
+  color: white;
 }
   /* first half of the form */
   .forma1{
     display:flex;
     flex-direction: column;
     float: left;
-    height: fit-content;
-  }
+    margin-right: 20%;
+    width: 47%;
+  } 
   /* second half of the form */
   .forma2{
     display: flex;
     flex-direction: column;
-    float: right;
-    margin-left: 10vw;
-  }
-    .message{
+    /* float: right; */
+   }
+    /* .message{
       display: flex;
       flex-direction: column;
       
-    }
+    } */
     .button_mails{
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
     }
 
       .emails_list{
@@ -167,12 +180,19 @@
       }
 
       .send_button{
-        margin-left: 3%;
-        margin-top: 5%;
+        margin-left: 5%;
+        margin-top: 19%;
+        color:black
       }
+      .impostor-gif{
+        padding-left: 16%;
+        /* margin-right: -200px; */
+        /* margin-right: -20%; */
+        padding-left: 10%;
 
+      }
+/* FAQ */
 .q{
-  color: #444;
   cursor: pointer;
   padding: 30px 20px;
   width: 60%;
@@ -180,6 +200,7 @@
   outline: none;
   transition: 0.4s;
   margin: auto;
+  color: white;
 }
 
 .a{
@@ -187,31 +208,74 @@
   /* text-align: center; */
  width: 50%; 
  padding: auto;
+ color: white;
  
 }
 
-.active, .q:hover {
-    background-color: #4b0707;
+h2{
+  text-align: center;
+  color: white;
 }
 
-.a {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+.reveal {
+  /* position: relative; */
+  opacity: 0;
 }
 
-
-.q:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
 }
 
-.active:after {
-  content: "\2796";
+@keyframes fade-bottom {
+  0% {
+    transform: translateY (50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+.gradient{
+  background-image:linear-gradient(black, grey) ;
+  margin-left: -10px;
+}
+
+/* media kveri */
+@media(max-width:1000px){
+
+
+  .paragraf{
+    font-size: 10px;
+    display:block;
+    opacity: 1;
+  }
+  
+  .gifs{
+    display:none;
+  }
+  .About_us{
+    background-image: url('../img/pozadinaContacts.jpg');
+    background-size: contain;
+    margin-left: -10px;
+    margin-right: 20px;
+  }
+  
+  
+}
+
+@media(max-width:1210px){
+  #contact_us{
+    display:none;
+  }
+  .impostor-gif{
+    display:none;
+  }
+  .faq{
+    opacity: 1;
+  }
+}
