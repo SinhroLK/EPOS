@@ -4,9 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacts and about us</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="CSS/contactsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="komplet">
+        <div class="About_us">
+            <div class="split gifs">
+                <div class="gif1">
+                    <img src="img/gifSmrt1-pocetak.png" alt="gif1" height="100px" width="100px" id="gif1" onclick="prikaziAboutUs()">
+                    <p class="kvazi-dugme">About us</p>
+                </div>
+                <div class="gif2">
+                    <img src="img/gifSmrt2-pocetak.png" alt="gif2" height="100px" width="200px" id="gif2" onclick="prikaziMailove()">
+                    <p class="kvazi-dugme">Email</p>
+                </div>
+                <div class="gif3">
+                    <img src="img/gifSmrt3-pocetak.png" alt="gif3" height="100px" width="200px" id="gif3" onclick="prikaziGithub()">
+                    <p class="kvazi-dugme">GitHub</p>
+                </div>
+            </div>
+            <div class="split texts fadeIn">
+                <p id="about_us" class="paragraf tekst" display>
+                    Our names are Matea, Stefan and Luka. We are students at the Faculty of Organisational Sciences, University of Belgrade. 
+                    As of making this we are in our 3rd year. All three of us are interested in ethical hacking, with Matea and Stefan having 
+                    participad in the national championship representing our faculty. Stefan is also interested in computer networks, while
+                    Matea and Luka are interested in data science and machine learning. 
+                </p>
+                <br>
+                <p id="emails" class ="paragraf">
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:matealegenda33@gmail.com">Matea's Mail  </a> <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:muratbajazitovic@gmail.com">Stefan's Mail </a> <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:lkrstic001@gmail.com">Luka's Mail </a> <br>
+                </p>
+                <br>
+                <p id = "github" class ="paragraf">
+                    <a href="https://github.com/MateaLukiccc" target="_blank">
+                        <i class="fa fa-github"></i> Matea's GitHub
+                    </a> <br>
+                    <a href="https://github.com/Djuropegla" target="_blank">
+                        <i class="fa fa-github"></i> Stefan's GitHub 
+                    </a><br>
+                    <a href="https://github.com/SinhroLK" target="_blank">
+                        <i class="fa fa-github"></i> Luka's GitHub 
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="gradient">
+            <div class = "contact_us">
+                <form id="contact_us" onsubmit="form()">
+                    <div class="forma1 child">
+                        <label for="name">Name</label>
+                        <input id="name" class="input-field" type="text" placeholder="John Smith" value="">
+                        <label for="email">Email</label>
+                        <input id="email" class="input-field" type="email" placeholder="johnsmith123@mail.com">
+                        <label for="zodiac">Zodiac sign</label>
+                        <select name="Zodiac sign" id="zodiac">
+                            <option value="Aries">Aries</option>
+                            <option value="Taurus">Taurus</option>
+                            <option value="Gemini">Gemini</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Leo">Leo</option>
+                            <option value="Virgo">Virgo</option>
+                            <option value="Libra">Libra</option>
+                            <option value="Scorpius">Scorpius</option>
+                            <option value="Sagittarius">Sagittarius</option>
+                            <option value="Capricornus">Capricornus</option>
+                            <option value="Aquarius">Aquarius</option>
+                            <option value="Pisces">Pisces</option>
+                        </select>
+                    
+                    </div>
+                    <div class="forma2 child">
+                        <div class="message">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="50" rows="5" placeholder="Enter your message..."></textarea>
+                        </div>
+                        <div class="button_mails">
+                            <div class="emails_list">
+                                <label for="mails">Who do you want to contact</label>
+                                <select name="Who do you want to contact" id="mails">
+                                    <option value="All three">All three</option>
+                                    <option value="Matea">Matea</option>
+                                    <option value="Stefan">Stefan</option>
+                                    <option value="Luka">Luka</option>
+                                </select>
+                            </div>
+                            <div class="send_button">
+                                <button id="submit" type="submit">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="impostor-gif">
+                    <img src="img/forma_gif.gif" alt="gif" width="50%" height="50%">
+                </div>
+            </div>
+            <div class="faq reveal fade-bottom">
+                <h2>FAQS</h2>
+                <div class="q1">
+                    <h3 class="q">1. Do you believe in object permanency?</h3>
+                    <p class="a">MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM MOM DISSAPEARS WHEN SHE LEAVES THE ROOM </p><br>
+                </div>
+                <hr class="hr-line">
+                <div class="q2">
+                    <h3 class="q">2. Do you know any two odd numbers whose difference of squares is not a multiple of 8?</h3>
+                    <p class="a">Don't ever ask us that again<p> <br>
+                </div>
+                
+                <hr class="hr-line">
+                <div class="q3">
+                    <h3 class="q">3.What is you guys' favourite programming language?</h3>
+                    <p class="a">Matea: Not Java <br>Stefan: Not Java <br> Luka: Java</p> <br>
+                </div>
+            
+                <hr class="hr-line">
+            </div>
+        </div>
+    </div>
+    <script src="JS/contacts.js"></script>
 </body>
 </html>
