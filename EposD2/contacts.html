@@ -58,10 +58,10 @@
         </div>
         <div class="gradient">
             <div class = "contact_us">
-                <form id="contact_us" action="contacts.html">
+                <form id="contact_us" onsubmit="form()">
                     <div class="forma1 child">
                         <label for="name">Name</label>
-                        <input id="name" class="input-field" type="text" placeholder="John Smith">
+                        <input id="name" class="input-field" type="text" placeholder="John Smith" value="">
                         <label for="email">Email</label>
                         <input id="email" class="input-field" type="email" placeholder="johnsmith123@mail.com">
                         <label for="zodiac">Zodiac sign</label>
@@ -90,14 +90,14 @@
                             <div class="emails_list">
                                 <label for="mails">Who do you want to contact</label>
                                 <select name="Who do you want to contact" id="mails">
+                                    <option value="All three">All three</option>
                                     <option value="Matea">Matea</option>
                                     <option value="Stefan">Stefan</option>
                                     <option value="Luka">Luka</option>
-                                    <option value="All three">All three</option>    
                                 </select>
                             </div>
                             <div class="send_button">
-                                <button>
+                                <button id="submit" type="submit">
                                     Send
                                 </button>
                             </div>
@@ -117,7 +117,7 @@
                 <hr class="hr-line">
                 <div class="q2">
                     <h3 class="q">2. Do you know any two odd numbers whose difference of squares is not a multiple of 8?</h3>
-                    <p class="a">Don't ever ask us that again<p>
+                    <p class="a">Don't ever ask us that again<p> <br>
                 </div>
                 
                 <hr class="hr-line">

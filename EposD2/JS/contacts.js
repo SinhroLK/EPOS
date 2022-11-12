@@ -53,18 +53,31 @@ function reveal() {
   
   window.addEventListener("scroll", reveal);
 
-
-// let mylogo1 = document.getElementById('about_us');
-// document.getElementById('gif1').onclick = function(){
-//   mylogo1.classList.toggle('fade');
-// }
-
-// let mylogo2 = document.getElementById('emails');
-// document.getElementById('gif2').onclick = function(){
-//   mylogo2.classList.toggle('fade');
-// }
-
-// let mylogo3 = document.getElementById('github');
-// document.getElementById('gif3').onclick = function(){
-//   mylogo3.classList.toggle('fade');
-// }
+function form(){
+    const date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let minute = date.getUTCMinutes();
+    let seconds = date.getSeconds();
+    if(minute<10 && seconds < 10){
+        alert("Your message was sent at " + hour.toString()+ ":" + "0" + minute.toString() +":"+ "0"+ seconds.toString() +"\n" +
+        "Date: " + day.toString() +"."+ month.toString() +"." +year.toString() +"." + "\n"
+        + "Thank you for messaging us! We are going to respond as soon as we fix our servers UwU <3.");
+    } else if(minute<10 && seconds>=10){
+        alert("Your message was sent at " + hour.toString()+ ":" + "0"+ minute.toString() +":"+ seconds.toString() +"\n" +
+        "Date: " + day.toString() +"."+ month.toString() +"." +year.toString() +"." + "\n"
+        + "Thank you for messaging us! We are going to respond as soon as we fix our servers UwU <3.");
+    } else if(minute >= 10 && seconds<10){
+        alert("Your message was sent at " + hour.toString()+ ":" + minute.toString() +":"+ "0" +seconds.toString() +"\n" +
+        "Date: " + day.toString() +"."+ month.toString() +"." +year.toString() +"." + "\n"
+        + "Thank you for messaging us! We are going to respond as soon as we fix our servers UwU <3.");
+    } else{
+        alert("Your message was sent at " + hour.toString()+ ":" + minute.toString() +":"+ seconds.toString() +"\n" +
+        "Date: " + day.toString() +"."+ month.toString() +"." +year.toString() +"." + "\n"
+        + "Thank you for messaging us! We are going to respond as soon as we fix our servers Uwu <3.");
+    }
+   
+    
+}
