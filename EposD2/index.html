@@ -8,6 +8,9 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="split left fill">
@@ -23,17 +26,17 @@
             <form id="loginForm" action="main.html">
                 <div class="input-icons">
                     <i class="fa fa-user icon required"></i>
-                    <input class="input-field" type="text" placeholder="Name">
+                    <input class="input-field" type="text" placeholder="Name" required>
                     <i class="fa fa-envelope icon required"></i>
-                    <input class="input-field" type="email" placeholder="Email">
+                    <input class="input-field" type="email" placeholder="Email" required>
                     <i class="fa fa-phone icon"></i>
                     <input class="input-field" type="text" placeholder="Phone">
                     <i class="fa fa-lock icon required"></i>
-                    <input class="input-field" type="password" placeholder="Password">
+                    <input class="input-field" type="password" placeholder="Password" required>
                 </div>
                 <div class="newsletter">
                     <form>
-                        <input type="checkbox" name="guidelines" id="guidelines">
+                        <input type="checkbox" name="guidelines" id="guidelines" required>
                         <label for="guidelines">I have read and agree to <a href="https://tamuceasttexan.com/4534/opinion/no-doubt-water-isnt-wet/" target="_blank">privacy policy</a> and <a href="https://www.jesuisundev.com/en/why-developers-hate-php/" target="_blank">terms of service</a></label>
                         <br>
                         <input type="checkbox" name="agree" id="agree">

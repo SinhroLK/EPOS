@@ -1,8 +1,11 @@
+
+
 /* NAV BAR */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 section{
   position: relative;
@@ -86,7 +89,7 @@ a{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Asap", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background: #42455a;
@@ -102,9 +105,11 @@ section:nth-child(2) {
   background: white;
 }
 
+
 section:nth-child(4) {
   color: white;
-  background: rgb(52, 49, 107);
+  background: rgb(29, 27, 59);
+  margin-top: 0px;
 }
 section .container {
   margin: 100px;
@@ -300,4 +305,14 @@ section .text-container .text-box h3 {
 
 .custom-shape-divider-bottom-1667829830 .shape-fill {
   fill: #1B0B0B;
+}
+
+.custom-shape-divider-top-1667829726 {
+  margin-top: -1px;
+}
+
+@media(max-width:450px) {
+  .fill{
+    margin-bottom: -3px;
+  }
 }
