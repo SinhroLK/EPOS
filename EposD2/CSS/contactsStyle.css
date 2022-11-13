@@ -7,12 +7,81 @@
 
 }
 
+/* NAV BAR */
+section{
+  position: relative;
+}
+
+header{
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  color: #fff;
+}
+
+li{
+  list-style:none;
+}
+
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav-link{
+  transition: .7s ease;
+}
+
+.nav-link:hover{
+  color: dodgerblue;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.4s ease-in-out;
+  background-color: #fff;
+}
+
+.logo{
+  width: 20%;
+  height: 20%;
+}
+/* END OF NAV BAR */
+
+
 .komplet{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 .About_us{
+  padding-top: 6%;
   display: flex;
   flex-direction: row;
   height: 70%;
@@ -236,6 +305,9 @@ h2{
 }
 
 @media(max-width:1231px){
+  .About_us{
+    padding-top: 7%;
+  }
   #contact_us{
     display:none;
   }
@@ -246,6 +318,9 @@ h2{
 }
 
 @media(max-width:778px){
+  .About_us{
+    padding-top: 9%;
+  }
   .paragraf{
     font-size: 15px;
     display:block !important;
@@ -261,4 +336,50 @@ h2{
   .gifs{
     display:none; 
   }
+}
+
+@media(max-width:600px){
+  .About_us{
+    padding-top: 20%;
+  }
+}
+
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position: fixed;
+    left: -200%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: .7s;
+  }
+
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+
 }

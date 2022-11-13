@@ -26,13 +26,13 @@
             <form id="loginForm" action="main.html">
                 <div class="input-icons">
                     <i class="fa fa-user icon required"></i>
-                    <input class="input-field" type="text" placeholder="Name" required>
+                    <input id="username" class="input-field" type="text" placeholder="Name" name="username" required>
                     <i class="fa fa-envelope icon required"></i>
-                    <input class="input-field" type="email" placeholder="Email" required>
+                    <input class="input-field" type="email" placeholder="Email" name="email" required>
                     <i class="fa fa-phone icon"></i>
                     <input class="input-field" type="text" placeholder="Phone">
                     <i class="fa fa-lock icon required"></i>
-                    <input class="input-field" type="password" placeholder="Password" required>
+                    <input class="input-field" type="password" placeholder="Password" name="password" required>
                 </div>
                 <div class="newsletter">
                     <form>
@@ -45,7 +45,7 @@
                 </div>
           </form>
           <div class="button-section">
-            <button class="join-button" type="submit" form="loginForm" value="Submit">Sign Up</button>
+            <button class="join-button" type="submit" form="loginForm" onclick="login(loginForm)" value="Submit">Sign Up</button>
           </div>        
         </div>
         <div class="agreement">
@@ -55,5 +55,6 @@
             <p>Copyright &copy; 2023 all rights reserved</p>
         </footer>
     </div>
+    <script src="JS/index.js"></script>
 </body>
 </html>
