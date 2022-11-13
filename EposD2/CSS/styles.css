@@ -176,7 +176,7 @@
   }  
 }
 
-@media(min-height:630px){
+@media(min-height:660px){
   .button-section{
     padding-top: 50px;
   }
@@ -185,7 +185,7 @@
   }
 
   .agreement{
-    margin-top: -50px;
+    margin-top: 70px;
   }
 
   footer{
