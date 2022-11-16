@@ -1,119 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* NAV BAR */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-  }
-  section{
+
+}
+
+section{
     position: relative;
-  }
-  
-  header{
+}
+
+header{
     background-color: black;
     position: fixed;
     z-index: 1000;
     width: 100%;
-  }
-  
-  li{
+}
+
+li{
     list-style:none;
-  }
-  
-  
-  a{
+}
+
+
+a{
     color: #fff;
     text-decoration: none;
-  }
-  
-  .navbar{
+}
+
+.navbar{
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-  }
-  
-  .nav-menu{
+}
+
+.nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
     font-size: 20px;
-  }
-  
-  .nav-link{
+}
+
+.nav-link{
     transition: .7s ease;
-  }
-  
-  .nav-link:hover{
+}
+
+.nav-link:hover{
     color: dodgerblue;
-  }
-  
-  .hamburger{
+}
+
+.hamburger{
     display: none;
     cursor: pointer;
-  }
-  
-  .bar{
+}
+
+.bar{
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: all 0.4s ease-in-out;
     background-color: #fff;
-  }
-  
-  .logo{
-    width: 20%;
-    height: 20%;
-  }
-  /* END OF NAV BAR */
-
-.box{
-    width: 100%;
-    height: 300px;
-}
-
-.box p{
-    font-size: 20px;
-    /* margin-top: 100px; */
-    
-}
-
-.box h1{
-    font-size: 50px;
-    /* text-shadow: 0px 0px 5px rgb(250, 250, 4); */
-
-}
-
-.section-1{
-    height: 100vh;
-    background-image: url('../img/wallpaper1.jpg');
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .logo{
+    width: 20%;
+    height: 20%;
+}
+/* END OF NAV BAR */
+
+/* SECTION 1 */
+.section-1{
+    width: 100%;
+    height: 70vw;
+    margin: 0 auto;
+    background-image: url('../img/wallpaper1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-amogus{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.logo-img{
+.logo-amogus-img{
 
     width: 60%;
     position: absolute;
     bottom: 2%;
 }
+    /* END OF SECTION 1 */
 
-
-
+/* SECTION 2 */
 .section-2{
-    height: 350px;
     width: 100%;
+    height: 22vw;
     display: table;
     clear: both;
     flex-direction: column;
@@ -135,91 +126,77 @@
 
 .s2-middle{
     width: 50%;
+    padding-top: 4%;
+
 }
 
 .s2-left{
     background-image: url('../img/the-crew.png');
     background-repeat: no-repeat;
     background-position: 25% 110%;
+    background-size: 70%;
 }
 
 .s2-right{
     background-image: url('../img/impostor-red.png');
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    background-size: 68% 55%;
-}
-/* .s2-column{
-    float: left;
-    padding: 3px;
+    background-size: 62% 55%;
 }
 
-.s2left, .s2right{
-    height: 40vh;
-    vertical-align: middle;
-    width: 25%;
-}
-.s2middle{
-    width: 50%;
-}
-
-.s2left{
-
-    background-image: url('../img/the-crew.png');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    
-} */
 
 
 .section-2 h1{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
+    font-size: 2em;
 }
 
 .section-2 p{
     margin-top: 50px;
     text-align: center;
-    font-size: 28px;
+    font-size: 2em;
+}
+    /* END OF SECTION 2 */
+
+    /* SECTION 3 */
+.section-3{
+    width: 100%;
+    height: 33vw;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+    background-image: url('../img/spaceship.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1em;
+}
+.section-3 p{
+    font-size: 1.5em;
 }
 
-.section-3{
-    height: 670px;
-    width: 100%;
-    display: table;
-    flex-direction: column;
-    text-align: center;
-    color: whitesmoke;
-    background-image: url('../img/spaceship.png');
-    background-size: cover;
-    background-attachment: fixed;
-}
 .s3-row1{
     height: 15%;
     text-align: center;
-    margin-top: 15px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-top: 0.5%;
 }
+
 .s3-row2{
     height: 70%;
 }
+
 .s3r2-text{
     height: 25%;
-    padding-top: 1px;
+    padding-top: 0.8%;
+    padding-bottom: 0.5%;
     line-height: normal;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     background-color: #000;
+    box-shadow: 0 2px 18px black;
 }
-.s3r2-text p{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.s3r2-text h2{
-    margin-bottom: 10px;
-}
-.s3r2-box{
-    height: 75%;
-}
+
 .s3r2-container{
     padding: 20px;
     margin: 50px auto;
@@ -227,14 +204,13 @@
     flex-direction: row;
     justify-content: center;
 }
+
 .s3img{
-    width: 250px;
+    width: 25%px;
     margin: 0 50px;
 }
 .s3img p{
     margin-top: 5px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
 }
 
 .image2{
@@ -253,21 +229,21 @@
 
 .s3-row3{
     height: 15%;
-    margin-bottom: 30px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-bottom: 1%;
 }
+    /* END OF SECTION 3 */
 
-
-
+    /* SECTION 4 */
 
 .section-4{
-    height: 670px;
+    height: 44vw;
     width: 100%;
     display: table;
     flex-direction: column;
     text-align: center;
     color: black;
     background-color: black;
+    font-size: 1em;
 }
 
 .s4-row1{
@@ -288,25 +264,27 @@
 
 }
 .s4r2-text p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.75%;
+    margin-bottom: 0.75%;
 }
 .s4r2-text h2{
-    margin-bottom: 10px;
+    margin-bottom: 0.75%;
 }
 .s4r2-box{
     height: 75%;
 }
 .s4r2-container{
-    padding: 20px;
-    margin: 50px auto;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    padding: 1% auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 .s4img{
-    width: 250px;
-    height: 180px;
+    width: 30%;
+    height: 63%;
     margin: 0 50px;
 }
 .s4img p{
@@ -354,46 +332,167 @@
     text-shadow: -0.5px -0.5px 0 rgb(255, 255, 255), 0.5px -0.5px 0 rgb(255, 255, 255), -0.5px 0.5px 0 rgb(255, 255, 255), 0.5px 0.5px 0 rgb(255, 255, 255);
 }
 
+    /* END OF SECTION 4 */
+
+    /* SECTION 5 */
+
 .section-5{
-    background-color: blue;
+    width: 100%;
+    height: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
 }
+
+.slider-inner{
+    width: 60%px;
+    height: 35%px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+
+}
+
+.slider-inner img{
+    display: none;
+    width: 60%px;
+    height: 35%px;
+    max-width: 100%;
+
+}
+
+.slider-inner img.active{
+    display: inline-block;
+}
+
+.prev, .next{
+    float: left;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+.prev{
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+}
+
+.next{
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
+}
+
+    /* END OF SECTION 5 */
+
+    /* SECTION 1 MEDIA */
+
+@media(max-width:930px){
+    .logo-amogus-img{
+        top: 20%;
+    }
+    
+}
+    /* END OF SECTION 1 MEDIA */
+
+    /* SECTION 2 MEDIA */
+
+@media(max-width:970px){
+
+    .s2-right{
+        width: 0%;
+        display: none;
+    }
+    .s2-left{
+        width: 0%;
+        display: none;
+    }
+    .s2-middle{
+        width: 100%;
+    }
+}
+    /* END OF SECTION 2 MEDIA */
+
+    /* SECTION 3 MEDIA */
+
+@media(max-width:610px){
+    .s3r2-container{
+        display: none;
+        width: 0%;
+    }
+
+}
+
+    /* END OF SECTION 3 MEDIA */
+
+    /* SECTION 4 MEDIA */
+
+@media(max-width:842px){
+    .s4r2-container{
+        display: none;
+        width: 0%;
+    }
+    .s4-row2{
+        height: 50%;
+    }
+
+}
+
+    /* END OF SECTION 4 MEDIA */
+
+    /* SECTION 5 MEDIA */
+
+@media(max-width:1005px){
+    .section-5{
+        display: none;
+    }
+
+}
+
+    /* END OF SECTION 5 MEDIA */
+
+    /* NAV BAR MEDIA */
 
 @media(max-width:768px){
     .hamburger{
-      display: block;
+        display: block;
     }
-  
+
     .hamburger.active .bar:nth-child(2){
-      opacity:0;
+        opacity:0;
     }
-  
+
     .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
-  
+
     .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
-  
+
     .nav-menu{
-      position: fixed;
-      left: -200%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: black;
-      width: 100%;
-      text-align: center;
-      transition: .7s;
+        position: fixed;
+        left: -200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: .7s;
     }
-  
-  
+
+
     .nav-item{
-      margin: 16px 0;
+        margin: 16px 0;
     }
-  
+
     .nav-menu.active{
-      left: 0;
+        left: 0;
     }
-  
-  }
+
+}
+
+    /* END OF NAV BAR MEDIA */
+    
