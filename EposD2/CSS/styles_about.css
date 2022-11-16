@@ -388,7 +388,7 @@ a{
 
     /* SECTION 1 MEDIA */
 
-@media(max-width:930px){
+@media(max-width:1172px){
     .logo-amogus-img{
         top: 20%;
     }
@@ -398,7 +398,7 @@ a{
 
     /* SECTION 2 MEDIA */
 
-@media(max-width:970px){
+@media(max-width:1132px){
 
     .s2-right{
         width: 0%;
